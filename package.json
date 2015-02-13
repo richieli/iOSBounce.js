@@ -1,0 +1,21 @@
+{
+    "name": "iOSBounce",
+    "description": "Stop full page scroll bounce on ios",
+    "homepage": "https://github.com/richieli/iOSBounce.js",
+    "author": "richieli <richieli0615@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/richieli/iOSBounce.js"
+    },
+    "main": "./dist/iOSBounce.js",
+    "version": "0.1.0",
+    "devDependencies": {
+        "grunt": "~0.4.2",
+        "grunt-contrib-concat": "~0.3.0",
+        "grunt-contrib-jshint": "~0.7.2",
+        "grunt-contrib-uglify": "~0.2.7",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt-contrib-clean": "~0.4.0",
+        "grunt-jsdoc": "~0.4.0"
+    }
+}
