@@ -87,9 +87,7 @@ js逻辑:
 //对ios滚动元素做适配
 if($.os.ios){
     $('#center').css({'position': 'absolute', "top": "0", "bottom": "44px"});
-```
-    ###iOSBounce.fix("center", ["top", "bottom"]);
-```
+    iOSBounce.fix("center", ["top", "bottom"]);
 } else {//android
     $('#center').css({"padding-bottom": "44px"});
 }
