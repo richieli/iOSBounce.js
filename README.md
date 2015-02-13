@@ -9,11 +9,11 @@ _____________________________________
 |          固定在顶部                |
 —————————————————————————————————————
 |                                   |
-|                                   |             iOSBounce.fix(id, otherIDs);
 |                                   |
-|                                   |             参数说明：
-|                                   |             id: {string} 滚动元素id 如(center);
-|           #center                 |             otherIDs: {array} 固定元素id 如(top,bottom);
+|                                   |
+|                                   |
+|                                   |
+|           #center                 |
 |           滚动元素                 |
 |                                   |
 |                                   |
@@ -25,6 +25,11 @@ _____________________________________
 |               #bottom             |
 |              固定在底部            |
 —————————————————————————————————————
+
+iOSBounce.fix(id, otherIDs);\n
+参数说明：\n
+id: {string} 滚动元素id 如(center);\n
+otherIDs: {array} 固定元素id 如(top,bottom);\n
 
 # 示例
 
