@@ -40,13 +40,13 @@ _____________________________________
 ```
 html结构：
 
-<div id="top" class="top">xxx</div>//固定在屏幕顶部
-<div id="center" class="center">xxx</div>//滚动
-<div id="bottom" class="bottom">xxx</div>//固定在屏幕底部
+<div id="top" class="top-bar">xxx</div>//固定在屏幕顶部
+<div id="center" class="scroller">xxx</div>//滚动
+<div id="bottom" class="bottom-bar">xxx</div>//固定在屏幕底部
 
 css样式：
 
-.top {
+.top-bar {
   position: fixed;
   top: 0px;
   height:35px;
@@ -58,7 +58,7 @@ css样式：
   background-color: #eee;
   z-index: 10;
 }
-.center {
+.scroller {
   /*需要通过js对ios以及android做适配*/
   width: 100%;
   height: auto;
@@ -66,7 +66,7 @@ css样式：
   overflow-y: scroll;
   -webkit-overflow-scrolling : touch;
 }
-.bottom {
+.bottom-bar {
   position: fixed;
   bottom: 0px;
   left: 0px;
@@ -87,7 +87,7 @@ js逻辑:
 //对ios滚动元素做适配
 if($.os.ios){
     $('#center').css({'position': 'absolute', "top": "0", "bottom": "44px"});
-    iOSBounce.fix("center", ["top", "bottom"]);
+    ##iOSBounce.fix("center", ["top", "bottom"]);
 } else {//android
     $('#center').css({"padding-bottom": "44px"});
 }
